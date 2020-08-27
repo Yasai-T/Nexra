@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, FC } from "react";
 import NextLink from "next/link";
 import { Link as ChakraLink } from "@chakra-ui/core";
 import type { LinkProps as NextLinkProps } from "next/dist/client/link";
@@ -8,7 +8,7 @@ export type LinkProps = PropsWithChildren<
   NextLinkProps & Omit<ChakraLinkProps, "as">
 >;
 
-const Link = ({
+const Link: FC<LinkProps> = ({
   href,
   as,
   replace,
@@ -17,7 +17,7 @@ const Link = ({
   prefetch,
   children,
   ...chakraProps
-}: LinkProps) => {
+}) => {
   return (
     <NextLink
       passHref={true}
