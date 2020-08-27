@@ -1,0 +1,46 @@
+{
+  "name": "nxt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check-types": "tsc -p . --noEmit",
+    "lint": "run-p -l lint:* check-types",
+    "lint:es": "eslint . --ext=ts,tsx",
+    "lint:prettier": "prettier --write \"**/*.{ts,tsx}\""
+  },
+  "dependencies": {
+    "next": "9.5.2",
+    "npm-run-all": "4.1.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "14.6.1",
+    "@types/react": "16.9.48",
+    "@typescript-eslint/eslint-plugin": "3.10.1",
+    "@typescript-eslint/parser": "3.10.1",
+    "eslint": "7.7.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-react": "7.20.6",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.13",
+    "prettier": "2.1.1",
+    "typescript": "4.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,css,md}": "prettier --write",
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}
