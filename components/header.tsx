@@ -7,7 +7,7 @@ const Header: FC = () => {
   const isDark = colorMode === "dark";
   return (
     <Box as="header" position="sticky" top={0}>
-      <Box bg="custom.orange" p="0 2rem">
+      <Box bg="orange.500" p="0 2rem">
         <Flex
           as="nav"
           height="80px"
@@ -16,6 +16,9 @@ const Header: FC = () => {
         >
           <Link href="/">Home</Link>
           <IconButton
+            isRound
+            size="lg"
+            variantColor="orange.500"
             aria-label="Toggle dark mode"
             icon={isDark ? "sun" : "moon"}
             onClick={toggleColorMode}
