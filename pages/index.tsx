@@ -1,6 +1,7 @@
 import Head from "next/head";
+import Link from "../components/link";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
       <Head>
@@ -8,11 +9,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <div>hello</div>
-      </main>
-
-      <footer></footer>
+      <div>hello</div>
+      <Link href="/test">to test</Link>
     </div>
   );
-}
+};
+
+export default Home;
