@@ -8,9 +8,6 @@ const theme = {
   ...chakraTheme,
   colors: {
     ...chakraTheme.colors,
-    custom: {
-      orange: "#ff8906",
-    },
   },
   fonts,
   breakpoints,
