@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Link from "../components/link";
+import EmojiFavicon from "../components/emojiFavicon";
 
 const Home = () => {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home</title>
+        <EmojiFavicon>🐊</EmojiFavicon>
       </Head>
 
       <div>hello</div>
