@@ -2,9 +2,9 @@ import { FC, ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
-  isRotate?: boolean;
+  rotate?: boolean;
 }
-const EmojiFavicon: FC<Props> = ({ children, isRotate = false }) => (
+const EmojiFavicon: FC<Props> = ({ children, rotate = false }) => (
   <link
     rel="icon"
     href={`data:image/svg+xml,
@@ -15,7 +15,7 @@ const EmojiFavicon: FC<Props> = ({ children, isRotate = false }) => (
       <text y=%22.9em%22 font-size=%2290%22>
       ${children}
       ${
-        isRotate
+        rotate
           ? `<animateTransform
               attributeName="transform"
               attributeType="XML"
