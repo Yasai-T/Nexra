@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <Head>
         <title>Home</title>
-        <EmojiFavicon>🐊</EmojiFavicon>
+        <EmojiFavicon isRotate>🐊</EmojiFavicon>
       </Head>
 
       <div>hello</div>
