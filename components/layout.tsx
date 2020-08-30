@@ -12,7 +12,7 @@ const Layout: FC<Props> = ({ children }) => {
     <Flex flexDirection="column" minH="100vh">
       <Header />
       <main>
-        <Box maxW="1024px" margin="1rem 2rem">
+        <Box maxW="1024px" margin="1rem auto">
           {children}
         </Box>
       </main>
