@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { Card } from "./card";
 import update from "immutability-helper";
+import { Button } from "@chakra-ui/core";
 
 const style = {
   width: 400,
@@ -39,6 +40,12 @@ export const Container: React.FC<Props> = ({ items }) => {
             <Card key={id} index={i} id={id} text={text} moveCard={moveCard} />
           ))}
         </div>
+        <Button
+          color="black"
+          onClick={() => window.alert(`${cards.map(({ id }) => id)}`)}
+        >
+          Submit
+        </Button>
       </>
     );
   }
