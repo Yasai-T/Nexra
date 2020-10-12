@@ -7,7 +7,7 @@ const style = {
 };
 
 export interface Item {
-  id: number;
+  id: string;
   text: string;
 }
 
