@@ -1,9 +1,9 @@
-import { FC } from "react";
+import { ComponentProps, FC } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
-import { Container, Item } from "../components/dnd/container";
+import { Container } from "../components/dnd/container";
 
-const items: Item[] = [
+const items: ComponentProps<typeof Container>["items"] = [
   {
     id: "id-1",
     text: "Write a cool JS library",

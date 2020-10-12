@@ -6,22 +6,16 @@ const style = {
   width: 400,
 };
 
-export interface Item {
-  id: string;
-  text: string;
-}
-
-export interface ContainerState {
-  cards: Item[];
-}
-
 interface Props {
-  items: Item[];
+  items: {
+    id: string;
+    text: string;
+  }[];
 }
 
 export const Container: React.FC<Props> = ({ items }) => {
   {
-    const [cards, setCards] = useState<Item[]>(items);
+    const [cards, setCards] = useState(items);
 
     const moveCard = useCallback(
       (dragIndex: number, hoverIndex: number) => {

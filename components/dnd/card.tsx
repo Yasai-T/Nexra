@@ -1,7 +1,7 @@
 import React from "react";
 import { useDraggableItem } from "../../hooks/useDraggableItem";
 
-export const ItemTypes = {
+const ItemTypes = {
   CARD: "card",
 };
 
@@ -14,7 +14,7 @@ const style = {
   cursor: "move",
 };
 
-export interface CardProps {
+interface CardProps {
   id: string;
   text: string;
   index: number;
