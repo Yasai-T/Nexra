@@ -47,7 +47,12 @@ const Home = () => {
         <Avatar name={data.viewer.name} src={data.viewer.avatarUrl} />
         <div>hello {data.viewer.name}</div>
       </Box>
-      <Link href="/dnd">to drag and drop</Link>
+      <div>
+        <Link href="/dnd">to drag and drop</Link>
+      </div>
+      <div>
+        <Link href="/404">to 404 not found</Link>
+      </div>
     </div>
   );
 };
