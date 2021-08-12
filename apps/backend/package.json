@@ -1,0 +1,52 @@
+{
+  "name": "@nexra/backend",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "license": "UNLICENSED",
+  "author": "",
+  "scripts": {
+    "build": "nest build",
+    "prebuild": "rimraf dist",
+    "start": "nest start",
+    "start:debug": "nest start --debug --watch",
+    "start:dev": "nest start --watch",
+    "start:prod": "node dist/main",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@nestjs/common": "8.0.0",
+    "@nestjs/core": "8.0.0",
+    "@nestjs/platform-express": "8.0.0",
+    "reflect-metadata": "0.1.13",
+    "rimraf": "3.0.2",
+    "rxjs": "7.2.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "8.0.0",
+    "@nestjs/schematics": "8.0.0",
+    "@nestjs/testing": "8.0.0",
+    "@types/express": "4.17.13",
+    "tsconfig-paths": "^3.10.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
