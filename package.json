@@ -9,7 +9,8 @@
     "check-types": "tsc -p . --noEmit",
     "lint": "run-p -l lint:* check-types",
     "lint:es": "eslint . --ext=ts,tsx",
-    "lint:prettier": "prettier --write \"**/*.{ts,tsx}\""
+    "lint:prettier": "prettier --write \"**/*.{ts,tsx}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@chakra-ui/core": "0.8.0",
@@ -37,15 +38,10 @@
     "eslint": "7.32.0",
     "eslint-config-prettier": "6.15.0",
     "eslint-plugin-react": "7.24.0",
-    "husky": "4.3.8",
+    "husky": "7.0.1",
     "lint-staged": "10.5.4",
     "prettier": "2.3.2",
     "typescript": "4.3.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.js": "eslint --fix",
