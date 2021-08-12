@@ -1,5 +1,5 @@
 import Lottie from "react-lottie";
-import animationData from "../assets/31159-robot-404.json";
+import animationData from "../../assets/31159-robot-404.json";
 import { FC } from "react";
 import { Flex } from "@chakra-ui/core";
 
