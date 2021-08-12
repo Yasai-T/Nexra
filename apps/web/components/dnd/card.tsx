@@ -1,17 +1,17 @@
-import React from "react";
-import { useDraggableItem } from "../../hooks/useDraggableItem";
+import React from 'react';
+import { useDraggableItem } from '../../hooks/useDraggableItem';
 
 const ItemTypes = {
-  CARD: "card",
+  CARD: 'card',
 };
 
 const style = {
-  border: "1px dashed gray",
-  padding: "0.5rem 1rem",
-  marginBottom: ".5rem",
-  backgroundColor: "white",
-  color: "black",
-  cursor: "move",
+  border: '1px dashed gray',
+  padding: '0.5rem 1rem',
+  marginBottom: '.5rem',
+  backgroundColor: 'white',
+  color: 'black',
+  cursor: 'move',
 };
 
 interface CardProps {

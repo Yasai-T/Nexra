@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 interface Props {
   emoji: string;
@@ -25,7 +25,7 @@ const EmojiFavicon: FC<Props> = ({ emoji, rotate = false }) => (
               dur="2s"
               repeatCount="indefinite"
             />`
-          : ""
+          : ''
       }
       </text>
     </svg>`}

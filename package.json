@@ -7,9 +7,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "check-types": "tsc -p . --noEmit",
-    "lint": "run-p -l lint:* check-types",
+    "lint": "run-p -l lint:*",
     "lint:es": "eslint . --ext=ts,tsx",
+    "lint:pkg": "lerna run lint --stream",
     "lint:prettier": "prettier --write \"**/*.{ts,tsx}\"",
     "prepare": "husky install"
   },
@@ -25,7 +25,12 @@
     "lerna": "4.0.0",
     "lint-staged": "11.1.2",
     "prettier": "2.3.2",
+    "prettier-plugin-organize-imports": "2.3.3",
+    "prettier-plugin-package": "1.3.0",
     "typescript": "4.3.5"
+  },
+  "prettier": {
+    "singleQuote": true
   },
   "lint-staged": {
     "*.js": "eslint --fix",

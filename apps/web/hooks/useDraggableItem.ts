@@ -1,11 +1,11 @@
-import { useRef } from "react";
+import { XYCoord } from 'dnd-core';
+import { useRef } from 'react';
 import {
+  DragSourceMonitor,
+  DropTargetMonitor,
   useDrag,
   useDrop,
-  DropTargetMonitor,
-  DragSourceMonitor,
-} from "react-dnd";
-import { XYCoord } from "dnd-core";
+} from 'react-dnd';
 
 interface DragItem {
   index: number;

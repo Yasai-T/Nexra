@@ -1,7 +1,7 @@
-import React, { useState, useCallback } from "react";
-import { Card } from "./card";
-import update from "immutability-helper";
-import { Button } from "@chakra-ui/core";
+import { Button } from '@chakra-ui/react';
+import update from 'immutability-helper';
+import React, { useCallback, useState } from 'react';
+import { Card } from './card';
 
 const style = {
   width: 400,

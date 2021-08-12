@@ -1,10 +1,12 @@
-import { FC } from "react";
-import { Box, Flex, IconButton, useColorMode } from "@chakra-ui/core";
-import Link from "./link";
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { Box, Flex, IconButton, useColorMode } from '@chakra-ui/react';
+import { FC } from 'react';
+import Link from './link';
 
 const Header: FC = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const isDark = colorMode === "dark";
+  const { toggleColorMode, colorMode } = useColorMode();
+
+  const isDark = colorMode === 'dark';
   return (
     <Box as="header" position="sticky" top={0}>
       <Box bg="orange.500" p="0 2rem">
@@ -18,9 +20,8 @@ const Header: FC = () => {
           <IconButton
             isRound
             size="lg"
-            variantColor="orange"
+            icon={isDark ? <SunIcon /> : <MoonIcon />}
             aria-label="Toggle dark mode"
-            icon={isDark ? "sun" : "moon"}
             onClick={toggleColorMode}
           />
         </Flex>
