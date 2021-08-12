@@ -22,8 +22,7 @@ const items: ComponentProps<typeof Container>["items"] = [
   },
   {
     id: "id-5",
-    text:
-      "Spam in Twitter and IRC to promote it (note that this element is taller than the others)",
+    text: "Spam in Twitter and IRC to promote it (note that this element is taller than the others)",
   },
   {
     id: "id-6",
