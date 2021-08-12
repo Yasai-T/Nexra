@@ -18,7 +18,7 @@ const Header: FC = () => {
           <IconButton
             isRound
             size="lg"
-            variantColor="orange.500"
+            variantColor="orange"
             aria-label="Toggle dark mode"
             icon={isDark ? "sun" : "moon"}
             onClick={toggleColorMode}
