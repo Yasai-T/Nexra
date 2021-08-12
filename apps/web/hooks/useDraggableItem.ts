@@ -73,6 +73,7 @@ export const useDraggableItem = (
   });
 
   const [{ isDragging }, drag] = useDrag({
+    type: targetType,
     item: { type: targetType, id, index },
     collect: (monitor: DragSourceMonitor) => ({
       isDragging: monitor.isDragging(),
