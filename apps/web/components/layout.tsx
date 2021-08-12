@@ -1,7 +1,7 @@
-import { FC, ReactNode } from "react";
-import Footer from "./footer";
-import Header from "./header";
-import { Box, Flex } from "@chakra-ui/core";
+import { Box, Flex } from '@chakra-ui/react';
+import { FC, ReactNode } from 'react';
+import Footer from './footer';
+import Header from './header';
 
 interface Props {
   children: ReactNode;

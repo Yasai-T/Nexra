@@ -1,13 +1,12 @@
-import Head from "next/head";
-import Link from "../components/link";
-import EmojiFavicon from "../components/emojiFavicon";
-import { Avatar, Box, CircularProgress } from "@chakra-ui/core";
+import { Avatar, Box, CircularProgress } from '@chakra-ui/react';
+import { gql, GraphQLClient } from 'graphql-request';
+import type { RequestDocument } from 'graphql-request/dist/types';
+import Head from 'next/head';
+import useSWR from 'swr';
+import EmojiFavicon from '../components/emojiFavicon';
+import Link from '../components/link';
 
-import useSWR from "swr";
-import { gql, GraphQLClient } from "graphql-request";
-import type { RequestDocument } from "graphql-request/dist/types";
-
-const ENDPOINT_URL = "https://api.github.com/graphql";
+const ENDPOINT_URL = 'https://api.github.com/graphql';
 
 const graphQLClient = new GraphQLClient(ENDPOINT_URL, {
   headers: {

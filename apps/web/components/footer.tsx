@@ -1,8 +1,8 @@
-import { FC } from "react";
-import { Box, Grid, Text } from "@chakra-ui/core";
+import { Box, Grid, Text } from '@chakra-ui/react';
+import { FC } from 'react';
 
 const Footer: FC = () => {
-  const year = "2020";
+  const year = '2020';
   return (
     <Box as="footer" marginTop="auto">
       <Grid

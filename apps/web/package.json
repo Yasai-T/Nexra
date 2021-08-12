@@ -8,10 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@chakra-ui/core": "0.8.0",
-    "@emotion/core": "11.0.0",
+    "@chakra-ui/react": "1.6.6",
+    "@emotion/react": "11.4.1",
     "@emotion/styled": "11.3.0",
-    "emotion-theming": "11.0.0",
+    "framer-motion": "4.1.17",
     "graphql": "15.5.1",
     "graphql-request": "3.5.0",
     "immutability-helper": "3.1.1",
