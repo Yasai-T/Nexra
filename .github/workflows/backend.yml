@@ -1,10 +1,10 @@
-name: Node.js CI
+name: backend CI
 
 on: push
 
 defaults:
   run:
-    working-directory: apps/web
+    working-directory: apps/backend
 
 jobs:
   build:
