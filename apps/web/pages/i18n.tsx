@@ -13,6 +13,7 @@ const I18n: NextPage = () => {
 
       <div>{formatMessage({ id: 'm3HSJL', defaultMessage: 'hello' })}</div>
       <div>{formatMessage({ id: 'EYU99A', defaultMessage: 'world' })}</div>
+      <div>{formatMessage({ defaultMessage: 'hoge' })}</div>
     </div>
   );
 };
