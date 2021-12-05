@@ -1,6 +1,7 @@
 import { Avatar, Box, CircularProgress } from '@chakra-ui/react';
 import { gql, GraphQLClient } from 'graphql-request';
 import type { RequestDocument } from 'graphql-request/dist/types';
+import { NextPage } from 'next';
 import Head from 'next/head';
 import useSWR from 'swr';
 import EmojiFavicon from '../components/emojiFavicon';
@@ -30,7 +31,7 @@ const query = gql`
   }
 `;
 
-const Home = () => {
+const Home: NextPage = () => {
   const { data, error } = useSWR(query, fetcher);
 
   if (error) return <div>failed to load</div>;

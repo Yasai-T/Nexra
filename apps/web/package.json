@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "compile": "formatjs compile",
+    "compile": "formatjs compile-folder --ast content/locales content/compiled-locales",
     "dev": "next dev",
-    "extract": "formatjs extract",
+    "extract:en": "formatjs extract '{pages,components}/**/*.ts*' --out-file content/locales/en.json",
+    "extract:ja": "formatjs extract '{pages,components}/**/*.ts*' --out-file content/locales/ja.json",
     "start": "next start"
   },
   "dependencies": {
