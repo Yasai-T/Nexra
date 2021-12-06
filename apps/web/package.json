@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "compile": "formatjs compile-folder --ast content/locales content/compiled-locales",
     "dev": "next dev",
-    "extract:en": "formatjs extract '{pages,components}/**/*.ts*' --out-file content/locales/en.json",
     "start": "next start"
   },
   "dependencies": {
@@ -24,12 +22,10 @@
     "react-dnd": "14.0.4",
     "react-dnd-html5-backend": "14.0.2",
     "react-dom": "17.0.2",
-    "react-intl": "5.23.0",
     "react-lottie": "1.2.3",
     "swr": "1.1.1"
   },
   "devDependencies": {
-    "@formatjs/cli": "4.5.0",
     "@types/react-lottie": "1.2.6"
   }
 }
