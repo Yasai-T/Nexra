@@ -52,6 +52,9 @@ const Home: NextPage = () => {
         <Link href="/dnd">to drag and drop</Link>
       </div>
       <div>
+        <Link href="/recoil">to recoil</Link>
+      </div>
+      <div>
         <Link href="/404">to 404 not found</Link>
       </div>
     </div>
