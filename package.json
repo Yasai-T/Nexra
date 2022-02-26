@@ -20,7 +20,7 @@
     "@typescript-eslint/parser": "5.12.1",
     "eslint": "8.10.0",
     "eslint-config-prettier": "8.4.0",
-    "eslint-plugin-react": "7.29.1",
+    "eslint-plugin-react": "7.29.2",
     "husky": "7.0.4",
     "lerna": "4.0.0",
     "lint-staged": "12.3.4",
